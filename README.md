@@ -1,17 +1,3 @@
-<style>
-  h1 {
-    color: #3498db; 
-  }
-
-  h2 {
-    color: #e74c3c; 
-  }
-
-  h3 {
-    color: #27ae60; 
-  }
-</style>
-
 # Git and GitHub Version Control Systems
 
 This project was created to facilitate learning the Git version control system and GitHub. Below, you will find useful commands along with their descriptions that you can use in the terminal.
