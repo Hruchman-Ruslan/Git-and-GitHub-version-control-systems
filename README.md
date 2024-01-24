@@ -1,13 +1,27 @@
-<h1 align="center"># Git and GitHub Version Control Systems</h1>
+<style>
+  h1 {
+    color: #3498db; 
+  }
+
+  h2 {
+    color: #e74c3c; 
+  }
+
+  h3 {
+    color: #27ae60; 
+  }
+</style>
+
+# Git and GitHub Version Control Systems
 
 This project was created to facilitate learning the Git version control system and GitHub. Below, you will find useful commands along with their descriptions that you can use in the terminal.
 
-<h2 align="center">## Global Git Settings</h2>
+## Global Git Settings
 
 - `git config --list` - List all configuration settings for the current Git repository;
 - `git help config` or `git config --help` - Display help information for the "config" command;
 
-<h2 align="center">## SSH Key Settings</h2>
+## SSH Key Settings
 
 - `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"` - Generate a new RSA SSH key pair;
 - `eval "$(ssh-agent -s)"` - Start the SSH agent and print necessary environment variables;
@@ -15,20 +29,20 @@ This project was created to facilitate learning the Git version control system a
 - `ssh-add --apple-use-keychain ~/.ssh/id_rsa` - Add RSA private key to the SSH agent for authentication (macOS);
 - `cat ~/.ssh/id_rsa.pub` - Display the content of the RSA public key file;
 
-<h2 align="center">## GitHub SSH Key Configuration</h2>
+## GitHub SSH Key Configuration
 
-<p align="center">### Copy the content of the public key and paste it into GitHub settings</p>
+### Copy the content of the public key and paste it into GitHub settings
 
-<a align="center">#### Visit: [GitHub SSH Key Settings] href="https://github.com/settings/keys"</a>
+#### Visit: [GitHub SSH Key Settings](https://github.com/settings/keys)
 
-<p align="center">##### Click on "New SSH key," insert the key, give it a name, and click "Add SSH key"</p>
+##### Click on "New SSH key," insert the key, give it a name, and click "Add SSH key"
 
-<p align="center">## Cloning a Repository</p>
+## Cloning a Repository
 
 - `git clone <repo-url>` - Clone a repository from the specified URL;
 - `git clone <repo-url> <local-name>` - Clone a repository from the specified URL and name the local directory;
 
-<h2 align="center">## Opening the Project in VSCode</h2>
+## Opening the Project in VSCode
 
 - `code .` - Open the Visual Studio Code editor in the current directory;
 - `code ~/path/to/your/directory` - Open the Visual Studio Code editor in the specified directory;
