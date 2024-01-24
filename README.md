@@ -19,9 +19,9 @@ This project was created to facilitate learning the Git version control system a
 
 ### Copy the content of the public key and paste it into GitHub settings
 
-#### Visit: [GitHub SSH Key Settings](https://github.com/settings/keys)
+### Visit: [GitHub SSH Key Settings](https://github.com/settings/keys)
 
-##### Click on "New SSH key," insert the key, give it a name, and click "Add SSH key"
+### Click on "New SSH key," insert the key, give it a name, and click "Add SSH key"
 
 ## Cloning a Repository
 
