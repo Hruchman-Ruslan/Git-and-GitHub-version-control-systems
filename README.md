@@ -56,3 +56,10 @@ This project was created to facilitate learning the Git version control system a
 - `git add drafts` - Stages the "drafts" directory for the next commit, including any changes within it;
 - `git add -A` - Stages all changes (new, modified, and deleted files) in the entire working directory for the next commit;
 - `git add --all` - The same thing git add -A;
+
+## Cleaning from version control
+
+- `git rm --cached <file>` - Unstages a file, keeping it in the working directory;
+- `git reset <your.txt>` - This command will remove your.txt from the index, but preserve any changes you made to the file;
+- `git reset` - Unstages changes, keeping them in the working directory;
+- `git reset --hard` - Resets the index and working directory to the state of the last commit, discarding all unsaved changes. This can be a risky operation as it may result in the loss of modifications, so use this command with caution;
