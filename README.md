@@ -32,3 +32,14 @@ This project was created to facilitate learning the Git version control system a
 
 - `code .` - Open the Visual Studio Code editor in the current directory;
 - `code ~/path/to/your/directory` - Open the Visual Studio Code editor in the specified directory;
+
+## Creating a local repository
+
+- `git init` - Initializes a new Git repository in the current directory (
+  To view the initialized project's folder, ensure hidden folders are visible.);
+
+## Linking a local repository to a remote one on GitHub
+
+- `git remote add origin <SSH-URL>` - git@github.com:username/repository.git (with SSH key configured) or <https://github.com/username/repository.git> (no SSH key configured);
+- `git remote -v` - Check to which remote repository your local one is bound;
+- `git remote set-url origin <SSH-URL>` - Updates the URL of the remote repository;
