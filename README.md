@@ -43,3 +43,16 @@ This project was created to facilitate learning the Git version control system a
 - `git remote add origin <SSH-URL>` - git@github.com:username/repository.git (with SSH key configured) or <https://github.com/username/repository.git> (no SSH key configured);
 - `git remote -v` - Check to which remote repository your local one is bound;
 - `git remote set-url origin <SSH-URL>` - Updates the URL of the remote repository;
+
+## Local repository status
+
+- `git status` - Checking the status of the repository;
+
+## Adding to version control
+
+- `git add <someFile.txt>` - Adds the file "someFile.txt" to the staging area in Git, preparing it for the next commit;
+- `git add *.txt` - Adds all files with the ".txt" extension in the current directory to the staging area in Git, preparing them for the next commit;
+- `git add .` - Stages all changes for the next commit;
+- `git add drafts` - Stages the "drafts" directory for the next commit, including any changes within it;
+- `git add -A` - Stages all changes (new, modified, and deleted files) in the entire working directory for the next commit;
+- `git add --all` - The same thing git add -A;
