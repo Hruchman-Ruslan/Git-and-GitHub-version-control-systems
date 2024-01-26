@@ -74,3 +74,4 @@ This project was created to facilitate learning the Git version control system a
 ## Recording of changes in the project
 
 - `git commit -m "add a new task"` - Records changes to the repository with a message describing the update;
+  test
