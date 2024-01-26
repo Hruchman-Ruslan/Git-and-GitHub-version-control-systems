@@ -99,3 +99,19 @@ This project was created to facilitate learning the Git version control system a
 - `git push -u origin main` - Sends committed changes to the remote repository to the remote main branch;
 
 If you are working with the local version of the newly created remote repository, that is, its remote version is still empty and without any branch, then the git push command will not work. Therefore, first you need to create and rename the main branch.
+
+## Working with branches in Git
+
+- `git branch` - Shows only local branches;
+- `git branch -r` - Shows only remote branches;
+- `git branch -a` - Shows all branches, both local and remote;
+
+## Creating a new branch
+
+- `git switch -c <your name branch>` - Creates and switches to a branch;
+- `git checkout -b <your name branch>` - Creates and switches to a branch;
+
+git switch -c is a modern, concise command for creating and switching to a new branch, while git checkout -b is an older alternative with the same functionality.
+
+- `git switch <your name branch>` - Switch to another branch (new command);
+- `git checkout <your name branch>` - Switch to another branch (old command);
