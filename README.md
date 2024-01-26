@@ -74,3 +74,8 @@ This project was created to facilitate learning the Git version control system a
 ## Recording of changes in the project
 
 - `git commit -m "add a new task"` - Records changes to the repository with a message describing the update;
+- `git commit --amend -m "update your message` - Is used to modify the last commit, allowing you to add changes or edit the commit message;
+- `git log` - Is a command to view the history of commits in a Git repository;
+- `git log -n <quantity>` - Will show the specified number of recent commits;
+- `git log --since=<times_period>` - Will show the commits created during the given time;
+- `git log --author="author name"` - Will show commits made by a specific author;
