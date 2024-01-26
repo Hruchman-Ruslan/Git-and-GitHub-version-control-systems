@@ -63,3 +63,10 @@ This project was created to facilitate learning the Git version control system a
 - `git reset <your.txt>` - This command will remove your.txt from the index, but preserve any changes you made to the file;
 - `git reset` - Unstages changes, keeping them in the working directory;
 - `git reset --hard` - Resets the index and working directory to the state of the last commit, discarding all unsaved changes. This can be a risky operation as it may result in the loss of modifications, so use this command with caution;
+
+## .gitignore file
+
+- `*.txt` - Ignore all .txt files;
+- `config.json` - Ignore a specific file;
+- `drafts/*` - Ignore all files in a specific directory;
+- `*.txt !plans.txt` - Ignore all .txt files except plans.txt;
