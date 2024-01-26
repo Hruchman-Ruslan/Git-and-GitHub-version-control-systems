@@ -79,3 +79,23 @@ This project was created to facilitate learning the Git version control system a
 - `git log -n <quantity>` - Will show the specified number of recent commits;
 - `git log --since=<times_period>` - Will show the commits created during the given time;
 - `git log --author="author name"` - Will show commits made by a specific author;
+
+## Working with the stack of changes (Stashing)
+
+- `git stash` - This command stores your pending changes (both tracked and untracked files) in a special temporary location called "stash;
+- `git stash save "my-comment"` - This command does the same but under the name you specify so that there is no confusion later;
+- `git stash list` - Command to view the Stash list;
+- `git stash pop` - A command to apply the most recent pending changes and remove them from the stack;
+- `git stash apply stash@{<number_stash>}` - Apply a particular stash without removing it from the stack;
+- `git stash drop stash@{<number_stash>}` - Remove a specific stash from the list;
+- `git stash clear` - To delete all saved change stacks;
+
+### To apply pending changes from the cache, your current code must be committed, otherwise you will receive an application error.
+
+## Pushing changes to GitHub
+
+- `git push` - The command pushes your local commits to the remote repository;
+- `git branch -M main` - Renames the default branch master to main;
+- `git push -u origin main` - Sends committed changes to the remote repository to the remote main branch;
+
+If you are working with the local version of the newly created remote repository, that is, its remote version is still empty and without any branch, then the git push command will not work. Therefore, first you need to create and rename the main branch.
