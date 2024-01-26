@@ -70,3 +70,7 @@ This project was created to facilitate learning the Git version control system a
 - `config.json` - Ignore a specific file;
 - `drafts/*` - Ignore all files in a specific directory;
 - `*.txt !plans.txt` - Ignore all .txt files except plans.txt;
+
+## Recording of changes in the project
+
+- `git commit -m "add a new task"` - Records changes to the repository with a message describing the update;
