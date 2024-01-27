@@ -115,3 +115,31 @@ git switch -c is a modern, concise command for creating and switching to a new b
 
 - `git switch <your name branch>` - Switch to another branch (new command);
 - `git checkout <your name branch>` - Switch to another branch (old command);
+
+## Working with remote branches
+
+- `git fetch` - Downloads the latest changes from the remote repository, but does not commit them to the current branches;
+- `git pull` - Simultaneously downloads and commits all recent changes (on all branches) to the local repository;
+- `git pull origin <your branch>` - This command will download and apply all changes from the remote <your branch> to the local one;
+
+## Merge branches
+
+- `git merge <your branch>` - This command will try to merge the <your branch> into your current branch;
+- `git push origin <your branch>` - This command will start changes to the remote <your branch>;
+
+Еhe merge will be performed exactly in the branch where you are, so don't forget to update it to the latest changes
+
+### Merge branches example:
+
+- `git switch main` - Transition to the main branch;
+- `git pull origin main` - Download the latest changes to this branch;
+- `git merge <your branch>` - While in the main branch, we merge from <your branch> into the main branch;
+- `git push origin main` - We send changes to the remote repository;
+
+!!! This is as an example, but take into account that when working with a team, you can never push to the main branch !!!
+
+## Removing branches
+
+- `git branch -d <your branch>` - Will delete <your branch> ps: -d means "delete". If the branch was merged, it will be removed without problems;
+- `git branch -D <your branch>` - Will delete <your branch> ps: -D is force delete. If the branch was not merged and you still want to remove it;
+- `git push origin --delete <your branch>` - Will delete the remote <your branch>;
