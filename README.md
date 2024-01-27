@@ -156,6 +156,7 @@ When you run code and get a conflict, Git marks the conflicting areas like this:
 <p>Branch footer</p> // code from the footer branch that causes the conflict
 
 >>>>>>> footer // end of conflict, the name of the branch you are trying to merge with
+```
 
 Resolving conflicts: You need to choose which version to keep, or combine changes from both versions. Edit the files to resolve conflicts by removing Git tags and selecting the content you want. This can be done manually or by clicking on the appropriate options.
 
@@ -165,4 +166,3 @@ But this is how you can resolve the conflict with the help of built-in options, 
 
 After resolving all conflicts, use the git add command to add the changed files. You hereby confirm that the conflicts have been resolved.
 Complete the merge process using the git commit command. Git will create a new change commit with a merge notification
-```
