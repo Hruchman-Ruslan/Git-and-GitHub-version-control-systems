@@ -160,7 +160,7 @@ Resolving conflicts: You need to choose which version to keep, or combine change
 
 But this is how you can resolve the conflict with the help of built-in options, where you can accept current changes, incoming changes or accept both options.
 
-![Result of conflict]("./conflict.jpg)
+![Alt text](https://ibb.co/smw7Zg6)
 
 After resolving all conflicts, use the git add command to add the changed files. You hereby confirm that the conflicts have been resolved.
 Complete the merge process using the git commit command. Git will create a new change commit with a merge notification
