@@ -143,3 +143,24 @@ git switch -c is a modern, concise command for creating and switching to a new b
 - `git branch -d <your branch>` - Will delete <your branch> ps: -d means "delete". If the branch was merged, it will be removed without problems;
 - `git branch -D <your branch>` - Will delete <your branch> ps: -D is force delete. If the branch was not merged and you still want to remove it;
 - `git push origin --delete <your branch>` - Will delete the remote <your branch>;
+
+## Local resolution of conflicts
+
+When you run code and get a conflict, Git marks the conflicting areas like this:
+
+<<<<<<< HEAD // start of conflicting lines, current branch is marked as HEAD
+
+<p>Branch header</p> // code from the current header branch that causes the conflict
+======= // separator between branch code
+<p>Branch footer</p> // code from the footer branch that causes the conflict
+
+> > > > > > > footer // end of conflict, the name of the branch you are trying to merge with
+
+Resolving conflicts: You need to choose which version to keep, or combine changes from both versions. Edit the files to resolve conflicts by removing Git tags and selecting the content you want. This can be done manually or by clicking on the appropriate options.
+
+But this is how you can resolve the conflict with the help of built-in options, where you can accept current changes, incoming changes or accept both options.
+
+![Result of conflict]("./conflict.jpg)
+
+After resolving all conflicts, use the git add command to add the changed files. You hereby confirm that the conflicts have been resolved.
+Complete the merge process using the git commit command. Git will create a new change commit with a merge notification
