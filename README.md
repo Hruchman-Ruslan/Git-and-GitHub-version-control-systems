@@ -166,3 +166,30 @@ But this is how you can resolve the conflict with the help of built-in options, 
 
 After resolving all conflicts, use the git add command to add the changed files. You hereby confirm that the conflicts have been resolved.
 Complete the merge process using the git commit command. Git will create a new change commit with a merge notification
+
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
+
+# Using the command line
+
+This is an addition to the project using the CLI (Command Line Interface). Someone might wonder why – and I'll say, why not.
+
+- `pwd` - Your current directory (the abbreviation pwd stands for "print working directory");
+- `ls` - Output a list of files and folders in the current working directory;
+- `ls -l` - Detailed list of files in the current directory with additional information about size, date, and time of modification;
+- `ls -la` - Display all hidden files;
+- `cd <directory name>` - Go to <directory name>;
+- `cd ..` - Go back one level;
+- `cd ~` - Return to the root directory;
+- `mkdir <directory name>` - Create a new folder with the name <directory name> in the current directory where you are in the terminal ps: the mkdir command can create multiple folders at once by listing their names after the command, separated by spaces;
+- `touch <file.txt>` - Create an empty file with the name <file.txt> ps: the touch command can create multiple file at once by listing their names after the command, separated by spaces;
+- `touch example/file.txt` - Create a file in a nested folder;
+- `rmdir` - The abbreviation for "remove directory," used to delete empty folders;
+- `rm -rf <directory name>` - For deleting any folders, whether empty or not;
+- `mv <source> <destination>` - For moving files and folders, as well as renaming - <source> is what you want to move or rename, and <destination> is where you want to move it or specify a new name;
+  ps: If you need to move a folder or file up one level, use the mv command. For example, to move a file named "example.txt" up one level, use mv example.txt ..
+- `cp <source> <destination>` - Creates a copy of a file or folder in a new location <source> is what you want to copy, and <destination> is where you want to copy it;
+- `clear` - For clearing the contents of the screen;  
+  An alternative command for clearing the screen in the terminal is the key combination:
+- `Ctrl + L` - For Windows/Linux;
+- `Control + L` - For MacOS;
+- `man <your command>` - Opens a guide for any command. Example man mv ps: after reading the necessary information, press the q key to return to the terminal;
